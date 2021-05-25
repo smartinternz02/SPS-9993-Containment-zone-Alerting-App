@@ -1,0 +1,86 @@
+Containment Zone Alerting App
+
+
+
+Project Idea:
+This application is intended to provide information about containment zones in a particular region by alerting people, through continuous monitoring of an individual's location. Key benefits of the application are monitoring people's activity and alerting them to their safety movements.
+
+Solution Requirement:
+The project aims at building an application that provides information about the containment zones of a particular region by continuously monitoring an individual's location. The location of the individual must be stored in the Database. Alerts are sent using the notification service. 
+
+Features of the Application
+
+Admin App 
+They should have a login to app and update the containment zones locations in the portal. Based on the location a Geofence will be created within a 100 meters radius. They should be able to see how many people are visiting that zone.
+
+UserApp 
+The app should have user registration and login. After the user logged into the app it will track the user location and update the database with the current location. If the user is visiting the containment zone he will get an alert notification.
+
+
+
+
+
+
+
+
+
+Proposed Solution Architecture :
+
+
+
+Technologies use :
+
+1) Python Flask
+
+Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.
+
+
+2) Docker
+
+Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.
+
+
+
+3) Tanzu Application Service
+
+VMware Tanzu Application Service is a modern platform purpose-built for developers to boost feature velocity and for operations teams to deliver world-class uptime. ... When you deploy new code with a simple cf push, the system gets your app into production moments later.
+
+4) MySql Database
+
+MySQL is an open-source relational database management system. Its name is a combination of "My", the name of co-founder Michael Widenius's daughter, and "SQL", the abbreviation for Structured Query Language.
+
+Database Structure
+
+1) Admin Table
+
+id int
+name text
+email varchar
+username varchar
+password varchar
+
+2) Location Table
+
+id int
+location text
+
+3) User Table
+
+
+id int
+name text
+email varchar
+location varchar
+username varchar
+password varchar
+
+
+5)SendGrid
+
+SendGrid is a Denver, Colorado-based customer communication platform for transactional and marketing email. The company was founded by Isaac Saldana, Jose Lopez, and Tim Jenkins in 2009, and incubated through the Techstars accelerator program.
+
+Conclusion :
+
+The app is enabled to  provide information about containment zones in a particular region by alerting people, through continuous monitoring of an individual's location. 
+
+........................................................................................................................................
